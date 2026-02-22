@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Ismaeel Bashir</title>
@@ -13,42 +12,39 @@
         <header>
             <h1><b>Ismaeel Bashir</b></h1>
         </header>
-
         <section>
             <h2>Bio</h2>
+            <p>Co-founder of <a href="https://expanse.org.uk">Expanse</a> where im building intelligent infrastructure for HPC.</p>
             <p>Final year student at the University of Edinburgh studying an undergraduate Masters in Informatics.</p>
             <p>Expected First class Honors (86%)</p>
         </section>
-
         <section>
             <h2>About Me</h2>
             <p>
-                Intrested in building large scale HPC and low latency systems, aswell as data pipelines. I have experience with Python, C++, C, and Java.
+                I work on ML for HPC, and systems that make supercomputers less painful to use and faster. I have experience with Go, Python, C++ and C.
             </p>
             <p>
-                I don't like web development; I make other cool things that you can see on my <a href="https://www.github.com/ismaeelbashir03">Github</a>.
+                I don't like web development; as you can probably tell from this website :) I make other things on my <a href="https://www.github.com/ismaeelbashir03">Github</a> and write occasionally on the <a href="https://expanse.org.uk/blog">Expanse blog</a>.
             </p>
         </section>
-
         <section>
             <h2>Links</h2>
             <ul>
                 <li><a href="cv.pdf" download>CV</a></li>
+                <li><a href="https://expanse.org.uk">Expanse</a></li>
                 <li><a href="https://www.linkedin.com/in/ismaeel-bashir">LinkedIn</a></li>
                 <li><a href="https://www.github.com/ismaeelbashir03">Github</a></li>
             </ul>
         </section>
-
         <section>
             <h2>Contact</h2>
             <p>Email me: <span id="email"></span></p>
             <button onclick="sendEmail()">Send me an email!</button>
+            <p>For anything Expanse related, please contact me at: <span id="expanse-email"></span></p>
         </section>
-
         <footer>
-            <p>&copy; 2024 Ismaeel Bashir</p>
+            <p>&copy; 2026 Ismaeel Bashir</p>
         </footer>
-
         <script>
             // JavaScript to obfuscate email
             document.addEventListener('DOMContentLoaded', function() {
@@ -57,13 +53,18 @@
                 var email = user + '@' + domain;
                 var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
                 document.getElementById('email').innerHTML = emailLink;
-            });
 
+                var expanseUser = 'ismaeel';
+                var expanseDomain = 'expanse.org.uk';
+                var expanseEmail = expanseUser + '@' + expanseDomain;
+                var expanseLink = '<a href="mailto:' + expanseEmail + '">' + expanseEmail + '</a>';
+                document.getElementById('expanse-email').innerHTML = expanseLink;
+            });
             function sendEmail() {
                 var user = 'ismaeelbashir2003';
                 var domain = 'gmail.com';
                 var email = user + '@' + domain;
-                window.location.href = 'mailto:' + email + '?subject=Congratulations&body=Congratulations Ismaeel, on receiving our job offer! We are excited to have you on board. :)';
+                window.location.href = 'mailto:' + email + '?subject=We%20would%20like%20to%20offer%20you%20a%20job&body=Hi%20Ismaeel%2C%20we%20have%20a%20great%20opportunity%20for%20you...%20(please%20do%20not%20forward%20this%20to%20your%20co-founders)';
             }
         </script>
     </body>
