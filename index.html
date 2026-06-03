@@ -64,7 +64,13 @@
                 var user = 'ismaeelbashir2003';
                 var domain = 'gmail.com';
                 var email = user + '@' + domain;
-                window.location.href = 'mailto:' + email + '?subject=Take%20my%20money%20%28Expanse%20investment%29&body=Hi%20Ismaeel%2C%0A%0ATake%20my%20money.%20How%20can%20I%20invest%20in%20Expanse%3F%20%3A))%0A';
+
+                var subject = "Slightly concerned by my GPU utilization";
+                var body = "Hi Ismaeel,\n\nI saw Expanse and felt personally attacked by the idea of my GPUs sitting idle.\n\nIf you're up for it, I'd love to hear what you're building (and what the best way to follow along is).\n\nCheers,\n";
+
+                window.location.href = 'mailto:' + email +
+                    '?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(body);
             }
         </script>
     </body>
